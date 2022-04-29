@@ -1,26 +1,176 @@
-<html>
-    <head>
-        <title id="title">
-            tribute page for guy
-        </title>
+<!DOCTYPE html>
 
-        
+<html lang="en">
+    <head>
+        <title>Red Velvet | Tribute Page</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Serif Pro">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro">
+        <style>
+            #main {
+                display: flex;
+                flex-flow: column;
+                margin: 0%;
+                height: 100%;
+                width: 100%;
+                background-color: #FFFFFF;
+                font-family: sans-serif;
+            }
+
+            #header {
+                height: 80vh;
+                display: flex;
+                align-items: flex-end;
+                background-color: #FFD1C3;
+                background-image: url(header.png);
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                border-bottom: solid 5px #FFD1C3;
+                margin-bottom: 20px;
+            }       
+
+            #header-text {
+                text-align: center;
+            }
+
+            #title {
+                font-family: 'Source Serif Pro', serif;
+                color: #7F2A3C;
+                font-size: 5rem;
+                line-height: 90%;
+                margin: 0;
+            }
+
+            #tribute-info {
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: bold;
+                font-size: 2rem;
+                color: #FFD1C3;
+                line-height: 95%;
+                margin-top: 0;
+            }
+
+            #img-div {
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                align-content: center;
+                margin-bottom: 2%;
+            }
+
+            #image {
+                max-width: 50%;
+                height: auto;
+            }
+
+            #img-caption {
+                max-width: 80%;
+            }
+
+            #tribute-link {
+                text-align: center;
+                font-family: sans-serif;
+            }
+
+            #footer {
+                display: block;
+                background-color: #FFD1C3;
+                text-align: center;
+                padding: 15px;
+                color: white;
+                height: 5%;
+            }
+
+            .info {
+                margin-bottom: 2%;
+                margin-left: 7%;
+                margin-right: 7%;
+            }
+
+            .section1 {
+                font-family: 'Source Serif Pro', serif;
+                color: #7F2A3C;
+                font-size: 3rem;
+                line-height: 90%;
+                margin: 0;
+            }
+
+            .section2 {
+                font-family: 'Source Serif Pro', serif;
+                font-weight: bold;
+                font-size: 1.5rem;
+                color: #FFD1C3;
+                line-height: 97%;
+                margin: 0;
+            }
+
+            .content {
+                font-family: 'Source Sans Pro', sans-serif;
+                font-size: 20px;
+                text-align: justify;
+            }
+
+            a {
+                color: #7F2A3C;
+                text-decoration: none;
+            }
+        </style>
     </head>
 
     <body id="main">
-        <div id="img-div">
-            <img src="https://onecms-res.cloudinary.com/image/upload/s--5mKjyqQ9--/f_auto%2Cq_auto/c_fill%2Cg_auto%2Ch_622%2Cw_830/v1/tdy-migration/200131_cat_ig.jpg?itok=GvEa_9kb" id="image" />
-            <span id="img-caption"></span>
+        <div id="header">
         </div>
 
-        <p id="tribute-info">paragraph about person</p>
-        <a id="tribute-link" href="_blank">link</a>
+        <div id="header-text">
+            <h1 id="title">Red Velvet</h1>
+            <p id="tribute-info">South Korean Girl Group</p>
+        </div>
 
-        <div>
-            <h1>heading 1</h1>
-            <p>paragraph 1</p>
-            <h1>heading 2</h1>
-            <p>paragraph 2</p>
-       </div>
+        <div id="img-div">
+              <img src="image.png" id="image">
+            <p id="img-caption">
+                Photoshoot: Red Velvet Seasons Greetings 2021.
+                <br>
+                From left to right, top to bottom: Wendy, Irene, Joy, Yeri, Seulgi.
+            </p>
+        </div>
+
+        <div class="info">
+            <div>
+                <h1 class="section1">What is Red Velvet?</h1>
+                <h2 class="section2">레드벨벳 특징</h2>
+            </div>
+            <div class="content">
+                <p>
+                    Red Velvet is a South Korean girl group formed and managed by SM Entertainment. They originally debuted on August 1, 2014, with the single "Happiness" with the four-member line-up of Irene, Seulgi, Wendy and Joy. A fifth member, Yeri, joined the group in March 2015, following the release of their first mini album, Ice Cream Cake. 
+                </p>
+                <p>
+                    Red Velvet's music and public image play on contrasting "red" and "velvet" sides. The "red" side showcases a bubbly and vibrant image, while their "velvet" side is more mature and elegant. Their recent work mixes the two sides together to convey sensuality, color, and sophistication. Their predominantly-pop "red" side experiments occasionally with electronic, funk and hip hop, while their "velvet" side focuses on '90s-influenced R&B with elements of ballad and jazz. Their genre versatility and hooks have garnered critical praise.
+                </p>
+                <p>
+                    Red Velvet's dual concept also affects the members' styling. In their "red" concept, they are usually dressed in colorful clothing, such as pastel sweaters and skirts in "Ice Cream Cake" and the red doll outfits in "Dumb Dumb". They are dressed more maturely for their "velvet" side, such as their suits in "Be Natural".
+                </p>
+            </div>
+        </div>            
+
+        <div class="info">
+            <div>
+                <h1 class="section1">Impact</h1>
+                <h2 class="section2">영향</h2>
+            </div>
+            <div class="content">
+                <p>
+                    Red Velvet have been lauded for breaking stereotypes among popular girl groups in South Korea, who tend to fall under either "cute and pure" or "sexy". In a country where girl groups' fanbases are mostly male, Taylor Glasby of Dazed Digital noted that the majority of Red Velvet's fans are young women. IZE Magazine named the group as one of the successful female figures who helped transform the "passive image" of South Korean women in 2017. Red Velvet's musical versatility has led to recognition by Time magazine as one of the genre's standout K-pop groups. Janelle Okwodu from Vogue wrote that throughout their career, "the critically acclaimed South Korean girl group has dominated the charts with their innovative pop sound". Billboard reported that Red Velvet were the overall favorite K-pop group of 2018 among fans of every gender and sexual identity on the genre-specific community on popular internet forum Reddit.
+                </p>
+                <p>
+                    Red Velvet have topped the Girl Group Brand Power Ranking, published by the Korean Corporate Reputation Research Institute, several times. In November 2019, Billboard crowned Red Velvet as "the best idol group alive" and named "Red Flavor" as the second-best K-pop song of the 2010s. Red Velvet's performance in Pyongyang in 2018—which made them the seventh idol group to perform in North Korea and the first since 2003—was part of a wider diplomatic initiative between South Korea and North Korea and earned the group a commendation from South Korea's Ministry of Culture, Sports and Tourism for their contributions in spreading South Korean popular culture. Discussing the Korean Wave in 2018, the director of the Korea Foundation for International Cultural Exchange cited Red Velvet as a major contributor and one of the country's most talented idol groups who have "largely promoted K-pop" around the world.
+                </p>
+            </div>
+        </div> 
+
+        <div id="footer">
+            <span>All information taken from <a href="https://en.wikipedia.org/wiki/Red_Velvet_(group)" target="_blank" id="tribute-link">here</a>. Tribute Project by <b>Dave Lavilla</b></span>
+        </div>
     </body>
 </html>
