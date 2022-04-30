@@ -6,13 +6,27 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Serif Pro">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro">
         <style>
+            :root {
+                --velvet: #7F2A3C;
+                --pink: #FFD1C3;
+                --font-color: #111;
+                --bg-color: #fff;
+            }
+
+            [data-theme="dark"] {
+                --velvet: #7F2A3C;
+                --pink: #FFD1C3;
+                --font-color: #fff;
+                --bg-color: #111;
+            }
+            
             #main {
                 display: flex;
                 flex-flow: column;
                 margin: 0%;
                 height: 100%;
                 width: 100%;
-                background-color: #FFFFFF;
+                background-color: var(--bg-color);
                 font-family: sans-serif;
             }
 
@@ -20,13 +34,13 @@
                 height: 80vh;
                 display: flex;
                 align-items: flex-end;
-                background-color: #FFD1C3;
+                background-color: var(--bg-color);
                 background-image: url(header.png);
                 background-attachment: fixed;
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
-                border-bottom: solid 5px #FFD1C3;
+                border-bottom: solid 5px var(--pink);
                 margin-bottom: 20px;
             }       
 
@@ -36,7 +50,7 @@
 
             #title {
                 font-family: 'Source Serif Pro', serif;
-                color: #7F2A3C;
+                color: var(--velvet);
                 font-size: 5rem;
                 line-height: 90%;
                 margin: 0;
@@ -46,7 +60,7 @@
                 font-family: 'Source Sans Pro', sans-serif;
                 font-weight: bold;
                 font-size: 2rem;
-                color: #FFD1C3;
+                color: var(--pink);
                 line-height: 95%;
                 margin-top: 0;
             }
@@ -70,15 +84,16 @@
 
             #tribute-link {
                 text-align: center;
-                font-family: sans-serif;
+                font-family: 'Source Sans Pro', sans-serif;
             }
 
             #footer {
                 display: block;
-                background-color: #FFD1C3;
+                font-family: 'Source Sans Pro', sans-serif;
+                background-color: var(--pink);
                 text-align: center;
                 padding: 15px;
-                color: white;
+                color: var(--bg-color);
                 height: 5%;
             }
 
@@ -90,7 +105,7 @@
 
             .section1 {
                 font-family: 'Source Serif Pro', serif;
-                color: #7F2A3C;
+                color: var(--velvet);
                 font-size: 3rem;
                 line-height: 90%;
                 margin: 0;
@@ -100,7 +115,7 @@
                 font-family: 'Source Serif Pro', serif;
                 font-weight: bold;
                 font-size: 1.5rem;
-                color: #FFD1C3;
+                color: var(--pink);
                 line-height: 97%;
                 margin: 0;
             }
@@ -109,10 +124,11 @@
                 font-family: 'Source Sans Pro', sans-serif;
                 font-size: 20px;
                 text-align: justify;
+                color: var(--font-color);
             }
 
             a {
-                color: #7F2A3C;
+                color: var(--velvet);
                 text-decoration: none;
             }
         </style>
